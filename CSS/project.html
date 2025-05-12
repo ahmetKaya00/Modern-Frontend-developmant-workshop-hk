@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+        }
+        nav{
+            display: flex;
+           
+            align-items: center;
+            padding: 15px 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            flex-wrap: wrap;
+            position: fixed;
+            width: 100%;
+        }
+        .logo{
+            color: white;
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            font-weight: 600;
+        }
+        nav ul{
+            display: flex;
+            gap: clamp(10px, 3vw, 30px);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: clamp(0.8rem, 1.5vw, 1rem);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover{
+            color: #ff4b2b;
+        }
+        @media (max-width: 500px){
+            nav{
+                justify-content: center;
+            }
+            .logo{
+                margin-bottom: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            nav ul{
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        .hero{
+            height: 80vh;
+            background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        .hero h1{
+            font-size: 3.5rem;
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 20px;
+            background-color: #fff;
+        }
+        .card{
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            transition: transform 0.3s;
+        }
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content{
+            padding: 20px;
+        }
+        .card h3{
+            color: #ff4b2b;
+            margin-bottom: 15px;
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        .divider{
+           background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1350&q=80'); 
+           background-attachment: fixed;
+           background-size: cover;
+           background-position: center;
+           color: white;
+           text-align: center;
+           padding: 120px 20px;
+           font-size: 2.5rem;
+           font-weight: 600;
+           letter-spacing: 1.5px;
+        }
+        .contact{
+            background-color: #222;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .contact h2{
+            color: #ff4b2b;
+            margin-bottom: 20px;
+        }
+        .contact form{
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact input, .contact textarea{
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+        }
+        .contact button{
+            background-color: #ff4b2b;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        footer{
+            background-color: #111;
+            color: #aaa;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li><a href="">Ana Sayfa</a></li>
+        <li><a href="">Hakkımızda</a></li>
+        <li><a href="">Hizmetler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div>
+        <h1>Techcareer.net</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aperiam!
+        </p>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80"
+          alt=""
+        />
+        <div class="card-content">
+          <h3>Demo Başlık</h3>
+          <p>Demo İçerikleri</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80"
+          alt=""
+        />
+        <div class="card-content">
+          <h3>Demo Başlık</h3>
+          <p>Demo İçerikleri</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=500&q=80"
+          alt=""
+        />
+        <div class="card-content">
+          <h3>Demo Başlık</h3>
+          <p>Demo İçerikleri</p>
+        </div>
+      </div>
+    </section>
+    <section class="divider">Hayallerine Koş!</section>
+    <section class="contact" id="contact">
+      <h2>Bize Ulaşın</h2>
+      <form action="">
+        <input type="text" placeholder="Adınız" />
+        <input type="email" placeholder="email" />
+        <textarea rows="5" placeholder="Mesajınız"></textarea>
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+    <footer>&copy; 2025 Techcareer Projesi</footer>
+  </body>
+</html>
